@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>QR code component</title>
+
+  <style>
+
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contanier{
+      width: 100%;
+      min-height: 100vh;
+      background-color: hsl(212, 45%, 89%);
+    }
+
+    .card{
+      width: 19rem;
+      padding: .5rem;
+      border-radius: 1.3rem;
+      background-color: hsl(0, 0%, 100%);
+      box-shadow: 0px 0px 10px gray;
+    }
+
+    .card_img{
+      height: 16rem;
+      aspect-ratio: 1;
+      margin-block: 1rem;
+    }
+    
+    .card_img img{
+      border-radius: 10px;
+      height: inherit;
+    }
+
+    .text{
+      padding: .5rem;
+    }
+
+
+
+
+
+    /* <=========== Utility classes ========> */
+    .center{
+      text-align: center;
+      font-size: 15px;
+    }
+    .bold{
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .flex{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p{
+      margin: 12px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="contanier flex">
+    <div class="card flex">
+      <div class="card_img center">
+        <img src="./images/image-qr-code.png" alt="QR Code Scan">
+      </div>
+      <div class="text">
+        <p class="bold center">
+          Improve your front-end skills by building projects
+        </p>
+        <p class="center">
+          Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Naveed Hassan</a>.
+  </div>
+</body>
+</html>
